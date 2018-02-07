@@ -24,7 +24,7 @@ export class ConfigDataComponent implements OnInit {
   }
 
   get name()  {
-      return this.weather.city.cityName;
+      return this.weather.city.name;
   }
 }
 

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 export interface CityData {
-    cityName : string;
+    name : string;
     coord : {
         lat : number;
         lon : number;
