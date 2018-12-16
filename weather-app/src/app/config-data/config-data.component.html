@@ -1,4 +1,5 @@
 <ng-container *ngIf="weather">
     <h1>{{weather.city.name}}</h1>
+    <span></span>
     <app-google-map [lat]="lat" [lng]="lon" [name]="name"></app-google-map>
 </ng-container>

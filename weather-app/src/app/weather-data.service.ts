@@ -20,7 +20,7 @@ export class WeatherDataService {
 
     constructor(private http: HttpClient) { }
 
-    configUrl = 'http://api.openweathermap.org/data/2.5/forecast?id=2747350&APPID=' + this.apiKey;
+    configUrl = 'http://api.openweathermap.org/data/2.5/forecast?id=2747350&units=metric&lang=nl&APPID=' + this.apiKey;
 
     getConfig() {
         return this.http.get<WeatherData>(this.configUrl);
